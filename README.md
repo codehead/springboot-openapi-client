@@ -5,7 +5,7 @@ performing a single request from a CommandLineRunner.
 
 ## How to build and execute
 
-1. Download and install [OpenAPI Generator CLI](https://github.com/OpenAPITools/openapi-generator-cli).
+1. Download and install [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator).
 
 2. Generate API client from our [tweaked The movieDB OpenAPI spec](themoviedb.json).
 
@@ -30,6 +30,12 @@ performing a single request from a CommandLineRunner.
 
     ```shell
     ./gradlew bootRun
+    ```
+
+5. Invoke the /api/movie/{movieid} endpoint.
+
+    ```shell
+    curl http://localhost:8080/api/movie/550
     ```
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [Javier Arturo Rodríguez](https://github.com/codehead/)
